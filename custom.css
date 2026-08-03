@@ -1,53 +1,92 @@
-/* General reset */
+/* Reset */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: #f4f6f9;
     color: #333;
 }
 
-/* Header styling */
-header {
-    background: #4a90e2;
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a73e8;
+    padding: 1rem 2rem;
     color: white;
-    text-align: center;
-    padding: 2rem 1rem;
 }
 
-/* Section styling */
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #eaf2fb;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Sections */
 section {
-    padding: 1.5rem;
-    margin: 1rem auto;
-    max-width: 800px;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 h2 {
-    color: #4a90e2;
+    color: #1a73e8;
+    margin-bottom: 1rem;
 }
 
-/* Portfolio list */
-.portfolio ul {
-    list-style: none;
-    padding: 0;
+/* Portfolio Cards */
+.cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-.portfolio li {
-    background: #eaf4fc;
-    margin: 0.5rem 0;
-    padding: 0.8rem;
-    border-radius: 5px;
+.card {
+    flex: 1;
+    min-width: 250px;
+    background: #f9fbfd;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
-/* Footer styling */
+.card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
-    background: #333;
+    background: #1a73e8;
     color: white;
+    margin-top: 2rem;
 }
-
