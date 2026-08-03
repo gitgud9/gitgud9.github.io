@@ -25,25 +25,52 @@ nav .logo {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 4rem 2rem;
-    background: #eaf2fb;
+    background: linear-gradient(to right, #1a73e8, #4a90e2);
+    color: white;
 }
 
 .hero h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: #ffdd57;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #ffc107;
 }
 
 /* Sections */
@@ -59,12 +86,15 @@ section {
 h2 {
     color: #1a73e8;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 /* Portfolio Cards */
 .cards {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
@@ -72,14 +102,20 @@ h2 {
     flex: 1;
     min-width: 250px;
     background: #f9fbfd;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 6px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.card h3 {
-    margin-top: 0;
-    color: #333;
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    color: #1a73e8;
+    margin-bottom: 1rem;
 }
 
 /* Footer */
@@ -90,3 +126,4 @@ footer {
     color: white;
     margin-top: 2rem;
 }
+
