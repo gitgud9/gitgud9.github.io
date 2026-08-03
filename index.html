@@ -3,35 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Javier | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Hello, I'm Javier</h1>
-        <p>Welcome to my portfolio website</p>
+    <!-- Navigation -->
+    <nav>
+        <h1 class="logo">Javier</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Showcasing my work in networking, coding, and technical design.</p>
     </header>
 
-    <section class="about">
+    <!-- About Section -->
+    <section id="about">
         <h2>About Me</h2>
         <p>
-            I’m a tech enthusiast preparing for my upcoming exam. 
-            I enjoy networking design, coding, and building resources 
-            that make technical concepts accessible.
+            I’m Javier, a tech enthusiast with expertise in networking design, 
+            coding, and building resources that make technical concepts accessible. 
+            I enjoy creating solutions that are clear, reliable, and exam‑ready.
         </p>
     </section>
 
-    <section class="portfolio">
+    <!-- Portfolio Section -->
+    <section id="portfolio">
         <h2>My Work</h2>
-        <ul>
-            <li>📘 OSI Model Explained</li>
-            <li>🖧 VLAN Trunking Design</li>
-            <li>🐍 Python OOP Troubleshooting</li>
-        </ul>
+        <div class="cards">
+            <div class="card">
+                <h3>OSI Model Explained</h3>
+                <p>A structured breakdown of the OSI layers for learners.</p>
+            </div>
+            <div class="card">
+                <h3>VLAN Trunking Design</h3>
+                <p>Optimized inter‑VLAN routing for exam scenarios.</p>
+            </div>
+            <div class="card">
+                <h3>Python OOP Troubleshooting</h3>
+                <p>Debugging and refining code for clarity and reliability.</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:javier@example.com">javier@example.com</a></p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/javier</a></p>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Contact me at: <a href="mailto:javier@example.com">javier@example.com</a></p>
+        <p>&copy; 2026 Javier | All Rights Reserved</p>
     </footer>
 </body>
 </html>
