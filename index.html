@@ -209,13 +209,13 @@
                             <span class="project-year">2026</span>
                         </div>
                         <p class="project-desc">
-                            A virtual queue for event booths such as VR, gaming and photo booths. Visitors scan a QR code to join on their phone and see their place in line and estimated wait update live. Staff run every booth from one PIN-protected portal, and a public "Now serving" screen shows who is up next.
+                            A virtual queue for event booths such as VR, gaming and photo booths. Visitors scan a QR code to join on their phone and see their place in line and estimated wait update live. Staff manages every booth from one PIN-protected staff portal, and a public "Now serving" screen shows who is next in queue.
                         </p>
                         <ul class="project-points">
                             <li>Wait estimates learn from real service times (moving average) and handle booths with several stations.</li>
                             <li>Optimistic concurrency keeps simultaneous joins safe: no ticket number is ever handed out twice, checked by a test with 40 joins at once.</li>
                             <li>Supabase Realtime pushes every change to phones, staff tablets and screens instantly, with generated Postgres columns for readable counts.</li>
-                            <li>Unit tests (Vitest), browser tests (Playwright) and CI on GitHub Actions.</li>
+                            
                         </ul>
                         <div class="tech-tags">
                             <span class="tag">Next.js</span>
@@ -243,13 +243,13 @@
                             <span class="project-year">2026</span>
                         </div>
                         <p class="project-desc">
-                            A chatbot for event visitors, built into Queuely. Ask "Which queue is shortest?", "Where's the VR booth?" or "What's on at 3pm?" and it answers from live queue data and the event schedule.
+                            A chatbot for event visitors, built into Queuely. Ask questions like "Which queue is shortest?", "Where's the VR booth?" or "What's on at 3pm?" and it answers from live queue data in the database and the event schedule.
                         </p>
                         <ul class="project-points">
                             <li>Uses Gemini (free tier) with tool calling to read live queues and the schedule, so it never makes up wait times.</li>
                             <li>Falls back across several models, and to rule-based quick answers when there is no key, the quota runs out or the AI is down, so the chat never shows an error.</li>
                             <li>Rate limiting and input checks protect the free quota and stop fake system messages.</li>
-                            <li>Staff edit the event info (places, programme, FAQ) from the portal, so it can be reused at any event without a redeploy.</li>
+                            <li>Staff can edit the event info (places, programme, FAQ) from the portal, so it can be reused at any event without a redeploy.</li>
                         </ul>
                         <div class="tech-tags">
                             <span class="tag">Gemini API</span>
