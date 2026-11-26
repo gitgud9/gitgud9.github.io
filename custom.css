@@ -653,34 +653,15 @@ footer {
 /* ==========================================================================
    Live-app Projects (screenshot links) & Extras
    ========================================================================== */
-.image-preview-wrapper {
-    position: relative;
+.project-img {
     display: block;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
-    background-color: var(--dark-bg);
-    overflow: hidden;
-}
-
-.image-preview-wrapper .thumbnail-img {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     object-position: top center;
-}
-
-.image-preview-wrapper .play-overlay {
-    opacity: 0;
-}
-
-.image-preview-wrapper:hover .play-overlay,
-.image-preview-wrapper:focus-visible .play-overlay {
-    opacity: 1;
-}
-
-.image-preview-wrapper:hover .thumbnail-img {
-    transform: scale(1.05);
-}
-
-.image-preview-wrapper .play-overlay i {
-    font-size: 2.5rem;
+    background-color: var(--dark-bg);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .project-points {
