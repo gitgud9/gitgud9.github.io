@@ -16,5 +16,6 @@ Live site: https://gitgud9.github.io/
 - `custom.css`: styles
 - `images/`: project screenshots
 - `profile.jpg`: profile photo
+- `Javier_Yeo_Resume.pdf`: resume (linked from the hero and footer)
 
 Plain HTML and CSS, served by GitHub Pages from the default branch. No build step.
