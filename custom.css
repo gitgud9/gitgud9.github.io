@@ -649,3 +649,92 @@ footer {
     }
 }
 
+
+/* ==========================================================================
+   Live-app Projects (screenshot links) & Extras
+   ========================================================================== */
+.image-preview-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    background-color: var(--dark-bg);
+    overflow: hidden;
+}
+
+.image-preview-wrapper .thumbnail-img {
+    object-position: top center;
+}
+
+.image-preview-wrapper .play-overlay {
+    opacity: 0;
+}
+
+.image-preview-wrapper:hover .play-overlay,
+.image-preview-wrapper:focus-visible .play-overlay {
+    opacity: 1;
+}
+
+.image-preview-wrapper:hover .thumbnail-img {
+    transform: scale(1.05);
+}
+
+.image-preview-wrapper .play-overlay i {
+    font-size: 2.5rem;
+}
+
+.project-points {
+    margin: 0 0 12px 20px;
+}
+
+.project-points li {
+    color: var(--text-main);
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-note {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.modules-label {
+    margin-top: 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.modules-label + .tech-tags {
+    margin-top: 8px;
+}
+
+.social-links {
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+}
+
+@media (max-width: 520px) {
+    .projects-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
